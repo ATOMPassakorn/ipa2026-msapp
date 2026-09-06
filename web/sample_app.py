@@ -45,8 +45,8 @@ def detail_router(ip):
         .limit(3)
     )
     return render_template(
-        "router_detail.html", 
-        router_ip=ip, 
+        "router_detail.html",
+        router_ip=ip,
         history_status=history_status
     )
 
