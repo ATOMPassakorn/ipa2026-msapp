@@ -44,7 +44,11 @@ def detail_router(ip):
         .sort("timestamp", -1)
         .limit(3)
     )
-    return render_template("router_detail.html", router_ip=ip, history_status=history_status)
+    return render_template(
+        "router_detail.html", 
+        router_ip=ip, 
+        history_status=history_status
+    )
 
 
 @app.route("/delete/<id>", methods=["POST"])
