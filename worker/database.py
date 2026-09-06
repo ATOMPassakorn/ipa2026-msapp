@@ -4,6 +4,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
+
 def save_interface_status(router_ip, interfaces):
 
     MONGO_URI = os.getenv("MONGO_URI")
